@@ -1,8 +1,5 @@
 def nyc_pigeon_organizer(data)
   new_hash = {}
-  color = data[:color]
-  gender = data[:gender]
-  lives = data[:lives]
   data.each do |key, value|
     value.each do |key2, names|
       names.each do |name|
