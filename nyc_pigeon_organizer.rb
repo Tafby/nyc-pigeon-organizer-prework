@@ -1,11 +1,11 @@
 def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |attribute, attribute_hash|
-    attribute_hash.each do |key2, names|
+    attribute_hash.each do |value, names|
       names.each do |name|
           new_hash[name] ||= {}
           new_hash[name][attribute] ||= []
-          new_hash[name][attribute] << key2.to_s
+          new_hash[name][attribute] << value.to_s
       end
     end
   end
